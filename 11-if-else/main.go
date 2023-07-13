@@ -2,9 +2,7 @@ package main
 
 import "fmt"
 
-
 func main() {
-
 	number := 15
 
 	if number > 15 {
