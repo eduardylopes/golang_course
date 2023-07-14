@@ -14,6 +14,7 @@ func main() {
 	fmt.Println(1, 2, "String", true)
 
 	// Dangerous code, this code accept anything and "interface{}" can be replaced by "any"
+	// This kind of code can broke our application and turn it insecure
 	anything := map[interface{}]interface{}{
 		1:            "String",
 		float32(100): true,
@@ -21,5 +22,6 @@ func main() {
 		true:         float64(12),
 	}
 
+	// The Println method from package fmt accepts anything, in this case its ok, because create a method only to show integers, another one for strings, etc...
 	fmt.Println(anything)
 }
