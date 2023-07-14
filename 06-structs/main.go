@@ -2,31 +2,31 @@ package main
 
 import "fmt"
 
-type user struct {
+type User struct {
 	name    string
 	age     uint8
-	address address
+	address Address
 }
 
-type address struct {
+type Address struct {
 	country string
 	city    string
 	street  string
 }
 
 func main() {
-	var u user
-	fmt.Println(u)
+	var user User
+	fmt.Println(user)
 
-	u.name = "Eduardy"
-	u.age = 28
-	fmt.Println(u)
+	user.name = "Eduardy"
+	user.age = 28
+	fmt.Println(user)
 
-	a := address{"Brazil", "Santa Bárbara", "R. Antônio Miranda Filho"}
+	address := Address{"Brazil", "Santa Bárbara", "R. Antônio Miranda Filho"}
 
-	u2 := user{"Eduardy", 21, a}
-	fmt.Println(u2)
+	user2 := User{"Eduardy", 21, address}
+	fmt.Println(user2)
 
-	u3 := user{name: "Eduardy"}
-	fmt.Println(u3)
+	user3 := User{name: "Eduardy"}
+	fmt.Println(user3)
 }

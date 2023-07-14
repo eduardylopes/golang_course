@@ -2,23 +2,23 @@ package main
 
 import "fmt"
 
-type person struct {
+type Person struct {
 	name     string
 	lastName string
 	age      uint8
 	height   float32
 }
 
-type student struct {
-	person
+type Student struct {
+	Person
 	curso   string
 	college string
 }
 
 func main() {
-	p1 := person{"Eduardy", "Morais", 28, 1.84}
-	fmt.Println(p1)
+	person := Person{"Eduardy", "Morais", 28, 1.84}
+	fmt.Println(person)
 
-	s1 := student{p1, "IT", "MIT"}
-	fmt.Println(s1.college)
+	student := Student{person, "IT", "MIT"}
+	fmt.Println(student.college)
 }
