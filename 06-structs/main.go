@@ -3,15 +3,15 @@ package main
 import "fmt"
 
 type user struct {
-	name string
-	age uint8
+	name    string
+	age     uint8
 	address address
 }
 
 type address struct {
 	country string
-	city string
-	street string
+	city    string
+	street  string
 }
 
 func main() {

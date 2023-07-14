@@ -17,7 +17,7 @@ func main() {
 	fmt.Println(variable3, variable4)
 
 	variable5, variable6 := "Variable 5", "Variable 6"
-	
+
 	fmt.Println(variable5, variable6)
 
 	const constant1 string = "Constant 1"

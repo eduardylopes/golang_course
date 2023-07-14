@@ -7,11 +7,11 @@ import (
 
 func main() {
 	// Create an int array with 5 positions
-	var array1[5] int
+	var array1 [5]int
 	fmt.Println(array1)
 
 	// Create a string array with 5 positions
-	var array2[5] string
+	var array2 [5]string
 	fmt.Println(array2)
 
 	// Define array of string and setting the values

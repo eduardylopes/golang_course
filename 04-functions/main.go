@@ -9,7 +9,7 @@ func sum(n1, n2 int8) int8 {
 func mathCalcs(n1, n2 int8) (int8, int8) {
 	sum := n1 + n2
 	minus := n1 - n2
-	
+
 	return sum, minus
 }
 

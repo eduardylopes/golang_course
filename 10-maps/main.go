@@ -3,8 +3,8 @@ package main
 import "fmt"
 
 func main() {
-	user := map[string]string {
-		"name": "Eduardy",
+	user := map[string]string{
+		"name":     "Eduardy",
 		"lastName": "Morais",
 	}
 
@@ -13,10 +13,10 @@ func main() {
 	user2 := map[string]map[string]string{
 		"name": {
 			"firstName": "Eduardy",
-			"lastName": "Morais",
+			"lastName":  "Morais",
 		},
 		"course": {
-			"name": "IT",
+			"name":    "IT",
 			"college": "MIT",
 		},
 	}
@@ -28,9 +28,9 @@ func main() {
 	fmt.Println(user2)
 
 	// Insert a new element
-	user2["name"] = map[string]string {
+	user2["name"] = map[string]string{
 		"firstName": "Eduardy",
-		"lastName": "Morais",
+		"lastName":  "Morais",
 	}
 	fmt.Println(user2)
 }

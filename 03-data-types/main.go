@@ -10,7 +10,7 @@ func main() {
 	// Numbers
 	var number1 int8 = 127
 	fmt.Println(number1)
-	
+
 	var number2 int16 = 10000
 	fmt.Println(number2)
 

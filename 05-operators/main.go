@@ -18,7 +18,7 @@ func main() {
 
 	// Relational Operators
 	fmt.Println(1 > 2)
-	fmt.Println(1 >- 2)
+	fmt.Println(1 > -2)
 	fmt.Println(1 == 2)
 	fmt.Println(1 != 2)
 
@@ -29,9 +29,10 @@ func main() {
 
 	// Unary Operators
 	number := 10
+
 	number++
-	number += 15
 	number--
+	number += 15
 	number -= 1
 	number *= 3
 	fmt.Println(number)
